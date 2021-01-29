@@ -24,17 +24,9 @@ public class Branching {
         }
         {
             System.out.println("numbers are " + (a == b ? "equals" : "not equals"));
-        }
-        {
             System.out.println("one number is " + (a % 2 == 0 ? "even" : "odd"));
-        }
-        {
             System.out.println("another number is " + (b % 2 != 0 ? "odd" : "even"));
-        }
-        {
             System.out.println("one number is " + (a > 0 ? "positive" : "negative"));
-        }
-        {
             System.out.println("another number is " + (b > 0 ? "positive" : "negative"));
         }
         if ((a < 100) || (b < 100)) {
@@ -86,16 +78,15 @@ public class Branching {
             System.out.println("Incorrect date! Please try again!");
             return;
         }
-        if ((month == 4) || (month == 6) || (month == 9) || (month == 11) && (day == 31)) {
+        if((month == 4) || (month == 6) || (month == 9) || (month == 11) && (day == 31)){
             System.out.println("Incorrect date! Please try again!");
-        } else {
-            if (format == 1) {
+        }
+            else if (format == 1) {
                 System.out.println("Your date is: " + year + "/" + month + "/" + day);
             } else {
                 System.out.println("Your date is:" + year + "." + month + "." + day);
             }
         }
-    }
 
     static void practicalTaskNo1_4() {
         Scanner input = new Scanner(System.in);
